@@ -1,0 +1,7 @@
+id = "eldritch"
+name = "Eldritch"
+schema_version = 1
+version = "0.1.0"
+authors = ["Ed Heltzel <ed@rainyday.media>"]
+description = "A dark theme inspired by Lovecraftian horror. Ported from eldritch.nvim with Neovim-matched syntax highlighting."
+repository = "https://github.com/edheltzel/eldritch-zed"

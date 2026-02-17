@@ -20,7 +20,18 @@ For more information, see the main [Eldritch](https://github.com/eldritch-theme/
 
 ## Showcase
 
-<!-- TODO: Add screenshots of each variant -->
+| | |
+|:---:|:---:|
+| ![HTML with inline JS and CSS dark mode script](images/html-dark-mode-script.png) | ![JSON package.json for a SvelteKit project](images/json-package.png) |
+| HTML — Dark mode script | JSON — package.json |
+| ![TypeScript Supabase SSR server hooks](images/typescript-supabase-hooks.png) | ![CSS with nested rules and custom properties](images/css-nested-rules.png) |
+| TypeScript — Supabase SSR hooks | CSS — Nested rules and custom properties |
+| ![TypeScript Vite configuration](images/typescript-vite-config.png) | ![TSX React component with Tailwind classes](images/tsx-react-component.png) |
+| TypeScript — Vite config | TSX — React component with Tailwind |
+| ![TSX React component in Eldritch Dark variant](images/tsx-react-component-dark.png) | ![C++ split pane with mouse events and parser macros](images/cpp-split-pane.png) |
+| TSX — React component (Dark variant) | C++ — Split pane with parser macros |
+| ![C++ JSON config and fish terminal in multi-pane layout](images/cpp-json-terminal.png) | |
+| C++ / JSON / Terminal — Multi-pane layout | |
 
 ## Installation
 

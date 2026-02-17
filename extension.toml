@@ -1,7 +1,7 @@
-id = "eldritch"
+id = "eldritch-theme"
 name = "Eldritch"
 schema_version = 1
 version = "0.1.0"
 authors = ["Ed Heltzel <ed@rainyday.media>"]
 description = "A community-driven dark theme inspired by Lovecraftian horror. Ported from eldritch.nvim with three variants: Eldritch, Eldritch Dark, and Eldritch Deeper."
-repository = "https://github.com/eldritch-theme/zed"
+repository = "https://github.com/edheltzel/eldritch-zed"

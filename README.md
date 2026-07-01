@@ -4,7 +4,7 @@
 
 # Eldritch for [Zed](https://zed.dev)
 
-> A community-driven dark theme inspired by Lovecraftian horror.
+> A community-driven theme inspired by Lovecraftian horror — now with dark **and** light variants.
 
 Ported from [eldritch.nvim](https://github.com/eldritch-theme/eldritch.nvim) with Neovim-matched syntax highlighting across 200+ languages.
 
@@ -12,11 +12,20 @@ For more information, see the main [Eldritch](https://github.com/eldritch-theme/
 
 ## Variants
 
-| Variant | Description |
-|---------|-------------|
-| **Eldritch** | Default palette -- vibrant accents on dark backgrounds |
-| **Eldritch Dark** | Official darker palette from `eldritch.nvim` -- deeper backgrounds with desaturated accents |
-| **Eldritch Deeper** | Deeper backgrounds with the original vibrant accent colors |
+Named to match the upstream [Eldritch palette](https://github.com/eldritch-theme/eldritch#-palette) flavors — Cthulhu, Abyss, and Dusk.
+
+| Variant | Appearance | Upstream flavor | Description |
+|---------|------------|-----------------|-------------|
+| **Eldritch** | dark | Cthulhu | Default palette — vibrant accents on the sunken-depths background |
+| **Eldritch Abyss** | dark | Abyss | The darker palette — deep void background with desaturated accents |
+| **Eldritch Dusk** | light | Dusk | **New** — the light palette, tuned for legibility on a pale coastal background |
+
+### Deprecated (removed in a future release)
+
+| Variant | Replacement | Notes |
+|---------|-------------|-------|
+| **Eldritch Dark** | **Eldritch Abyss** | Renamed to match the upstream `Abyss` flavor. Kept temporarily so existing selections don't break — reselect **Eldritch Abyss** at your convenience. |
+| **Eldritch Deeper** | _(none)_ | Legacy Zed-only variant with no upstream equivalent. |
 
 ## Showcase
 
@@ -46,11 +55,14 @@ For more information, see the main [Eldritch](https://github.com/eldritch-theme/
 ```json
 {
   "theme": {
-    "mode": "dark",
-    "dark": "Eldritch"
+    "mode": "system",
+    "dark": "Eldritch",
+    "light": "Eldritch Dusk"
   }
 }
 ```
+
+Use any variant name directly (e.g. `"Eldritch Abyss"`) if you prefer a fixed theme.
 
 ### Manual Installation
 
@@ -60,19 +72,21 @@ For more information, see the main [Eldritch](https://github.com/eldritch-theme/
 
 ## Color Palette
 
-| Color | Default | Dark | Hex (Default) |
-|-------|---------|------|---------------|
-| Background | ![#212337](https://placehold.co/16x16/212337/212337) | ![#171928](https://placehold.co/16x16/171928/171928) | `#212337` / `#171928` |
-| Foreground | ![#ebfafa](https://placehold.co/16x16/ebfafa/ebfafa) | ![#d8e6e6](https://placehold.co/16x16/d8e6e6/d8e6e6) | `#ebfafa` / `#d8e6e6` |
-| Cyan | ![#04d1f9](https://placehold.co/16x16/04d1f9/04d1f9) | ![#0396b3](https://placehold.co/16x16/0396b3/0396b3) | `#04d1f9` / `#0396b3` |
-| Green | ![#37f499](https://placehold.co/16x16/37f499/37f499) | ![#2dcc82](https://placehold.co/16x16/2dcc82/2dcc82) | `#37f499` / `#2dcc82` |
-| Purple | ![#a48cf2](https://placehold.co/16x16/a48cf2/a48cf2) | ![#8b75d9](https://placehold.co/16x16/8b75d9/8b75d9) | `#a48cf2` / `#8b75d9` |
-| Pink | ![#f265b5](https://placehold.co/16x16/f265b5/f265b5) | ![#d154a1](https://placehold.co/16x16/d154a1/d154a1) | `#f265b5` / `#d154a1` |
-| Red | ![#f16c75](https://placehold.co/16x16/f16c75/f16c75) | ![#cc5860](https://placehold.co/16x16/cc5860/cc5860) | `#f16c75` / `#cc5860` |
-| Yellow | ![#f1fc79](https://placehold.co/16x16/f1fc79/f1fc79) | ![#ccd663](https://placehold.co/16x16/ccd663/ccd663) | `#f1fc79` / `#ccd663` |
-| Orange | ![#f7c67f](https://placehold.co/16x16/f7c67f/f7c67f) | ![#d4a666](https://placehold.co/16x16/d4a666/d4a666) | `#f7c67f` / `#d4a666` |
+Accent hexes for the light **Dusk** variant are darkened from the upstream Dusk palette to stay legible (WCAG AA, ≥4.5:1) on the pale `#f0f3f4` background.
 
-> **Eldritch Deeper** uses the darker backgrounds with the default (vibrant) accent colors.
+| Color | Eldritch (Cthulhu) | Eldritch Abyss | Eldritch Dusk (light) |
+|-------|--------------------|----------------|-----------------------|
+| Background | ![#212337](https://placehold.co/16x16/212337/212337) `#212337` | ![#171928](https://placehold.co/16x16/171928/171928) `#171928` | ![#f0f3f4](https://placehold.co/16x16/f0f3f4/f0f3f4) `#f0f3f4` |
+| Foreground | ![#ebfafa](https://placehold.co/16x16/ebfafa/ebfafa) `#ebfafa` | ![#d8e6e6](https://placehold.co/16x16/d8e6e6/d8e6e6) `#d8e6e6` | ![#1e2029](https://placehold.co/16x16/1e2029/1e2029) `#1e2029` |
+| Cyan | ![#04d1f9](https://placehold.co/16x16/04d1f9/04d1f9) `#04d1f9` | ![#0396b3](https://placehold.co/16x16/0396b3/0396b3) `#0396b3` | ![#007992](https://placehold.co/16x16/007992/007992) `#007992` |
+| Green | ![#37f499](https://placehold.co/16x16/37f499/37f499) `#37f499` | ![#2dcc82](https://placehold.co/16x16/2dcc82/2dcc82) `#2dcc82` | ![#008043](https://placehold.co/16x16/008043/008043) `#008043` |
+| Purple | ![#a48cf2](https://placehold.co/16x16/a48cf2/a48cf2) `#a48cf2` | ![#8b75d9](https://placehold.co/16x16/8b75d9/8b75d9) `#8b75d9` | ![#754ef6](https://placehold.co/16x16/754ef6/754ef6) `#754ef6` |
+| Pink | ![#f265b5](https://placehold.co/16x16/f265b5/f265b5) `#f265b5` | ![#d154a1](https://placehold.co/16x16/d154a1/d154a1) `#d154a1` | ![#d6057c](https://placehold.co/16x16/d6057c/d6057c) `#d6057c` |
+| Red | ![#f16c75](https://placehold.co/16x16/f16c75/f16c75) `#f16c75` | ![#cc5860](https://placehold.co/16x16/cc5860/cc5860) `#cc5860` | ![#df0514](https://placehold.co/16x16/df0514/df0514) `#df0514` |
+| Yellow | ![#f1fc79](https://placehold.co/16x16/f1fc79/f1fc79) `#f1fc79` | ![#ccd663](https://placehold.co/16x16/ccd663/ccd663) `#ccd663` | ![#767200](https://placehold.co/16x16/767200/767200) `#767200` |
+| Orange | ![#f7c67f](https://placehold.co/16x16/f7c67f/f7c67f) `#f7c67f` | ![#d4a666](https://placehold.co/16x16/d4a666/d4a666) `#d4a666` | ![#a75c00](https://placehold.co/16x16/a75c00/a75c00) `#a75c00` |
+
+> **Deprecated:** **Eldritch Dark** is now **Eldritch Abyss** (same colors). **Eldritch Deeper** (deep background + vibrant accents) is a legacy Zed-only variant. Both remain for one release and will be removed in a future version.
 
 ## Disabling Italics
 

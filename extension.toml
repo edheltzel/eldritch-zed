@@ -1,7 +1,7 @@
 id = "eldritch-theme"
 name = "Eldritch"
 schema_version = 1
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Ed Heltzel <ed@rainyday.media>"]
-description = "A community-driven theme inspired by Lovecraftian horror, ported from eldritch.nvim. Aligned to the upstream Eldritch palette: Eldritch (Cthulhu, dark), Eldritch Abyss (darker), and the new light Eldritch Dusk. Includes deprecated Eldritch Dark and Eldritch Deeper (removed in a future release)."
+description = "A community-driven theme inspired by Lovecraftian horror, ported from eldritch.nvim. Includes Eldritch (Cthulhu/default), Eldritch Midnight (formerly Deeper), Eldritch Abyss (formerly Dark), and Eldritch Dusk (light)."
 repository = "https://github.com/edheltzel/eldritch-zed"

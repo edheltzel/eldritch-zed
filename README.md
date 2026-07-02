@@ -12,20 +12,16 @@ For more information, see the main [Eldritch](https://github.com/eldritch-theme/
 
 ## Variants
 
-Named to match the upstream [Eldritch palette](https://github.com/eldritch-theme/eldritch#-palette) flavors — Cthulhu, Abyss, and Dusk.
+This release drops the old alias names and uses four clear palette names:
 
-| Variant | Appearance | Upstream flavor | Description |
-|---------|------------|-----------------|-------------|
-| **Eldritch** | dark | Cthulhu | Default palette — vibrant accents on the sunken-depths background |
-| **Eldritch Abyss** | dark | Abyss | The darker palette — deep void background with desaturated accents |
-| **Eldritch Dusk** | light | Dusk | **New** — the light palette, tuned for legibility on a pale coastal background |
+| Variant | Appearance | Palette basis | Description |
+|---------|------------|---------------|-------------|
+| **Eldritch** | dark | Cthulhu | The default Cthulhu palette — vibrant accents on the sunken-depths background |
+| **Eldritch Midnight** | dark | Midnight | Formerly **Eldritch Deeper** — vibrant Cthulhu accents on the darker Void Black background |
+| **Eldritch Abyss** | dark | The Abyss | Formerly **Eldritch Dark** — darker background with more muted, desaturated accents |
+| **Eldritch Dusk** | light | Dusk | The light version, tuned for legibility on a pale coastal background |
 
-### Deprecated (removed in a future release)
-
-| Variant | Replacement | Notes |
-|---------|-------------|-------|
-| **Eldritch Dark** | **Eldritch Abyss** | Renamed to match the upstream `Abyss` flavor. Kept temporarily so existing selections don't break — reselect **Eldritch Abyss** at your convenience. |
-| **Eldritch Deeper** | _(none)_ | Legacy Zed-only variant with no upstream equivalent. |
+If you used **Eldritch Dark**, switch to **Eldritch Abyss**. If you used **Eldritch Deeper**, switch to **Eldritch Midnight**.
 
 ## Showcase
 
@@ -37,8 +33,8 @@ Named to match the upstream [Eldritch palette](https://github.com/eldritch-theme
 | TypeScript — Supabase SSR hooks | CSS — Nested rules and custom properties |
 | ![TypeScript Vite configuration](images/typescript-vite-config.png) | ![TSX React component with Tailwind classes](images/tsx-react-component.png) |
 | TypeScript — Vite config | TSX — React component with Tailwind |
-| ![TSX React component in Eldritch Dark variant](images/tsx-react-component-dark.png) | ![C++ split pane with mouse events and parser macros](images/cpp-split-pane.png) |
-| TSX — React component (Dark variant) | C++ — Split pane with parser macros |
+| ![TSX React component in Eldritch Abyss variant](images/tsx-react-component-dark.png) | ![C++ split pane with mouse events and parser macros](images/cpp-split-pane.png) |
+| TSX — React component (Abyss variant) | C++ — Split pane with parser macros |
 | ![C++ JSON config and fish terminal in multi-pane layout](images/cpp-json-terminal.png) | |
 | C++ / JSON / Terminal — Multi-pane layout | |
 
@@ -62,7 +58,7 @@ Named to match the upstream [Eldritch palette](https://github.com/eldritch-theme
 }
 ```
 
-Use any variant name directly (e.g. `"Eldritch Abyss"`) if you prefer a fixed theme.
+Use any variant name directly (e.g. `"Eldritch Midnight"` or `"Eldritch Abyss"`) if you prefer a fixed theme.
 
 ### Manual Installation
 
@@ -74,19 +70,17 @@ Use any variant name directly (e.g. `"Eldritch Abyss"`) if you prefer a fixed th
 
 Accent hexes for the light **Dusk** variant are darkened from the upstream Dusk palette to stay legible (WCAG AA, ≥4.5:1) on the pale `#f0f3f4` background.
 
-| Color | Eldritch (Cthulhu) | Eldritch Abyss | Eldritch Dusk (light) |
-|-------|--------------------|----------------|-----------------------|
-| Background | ![#212337](https://placehold.co/16x16/212337/212337) `#212337` | ![#171928](https://placehold.co/16x16/171928/171928) `#171928` | ![#f0f3f4](https://placehold.co/16x16/f0f3f4/f0f3f4) `#f0f3f4` |
-| Foreground | ![#ebfafa](https://placehold.co/16x16/ebfafa/ebfafa) `#ebfafa` | ![#d8e6e6](https://placehold.co/16x16/d8e6e6/d8e6e6) `#d8e6e6` | ![#1e2029](https://placehold.co/16x16/1e2029/1e2029) `#1e2029` |
-| Cyan | ![#04d1f9](https://placehold.co/16x16/04d1f9/04d1f9) `#04d1f9` | ![#0396b3](https://placehold.co/16x16/0396b3/0396b3) `#0396b3` | ![#007992](https://placehold.co/16x16/007992/007992) `#007992` |
-| Green | ![#37f499](https://placehold.co/16x16/37f499/37f499) `#37f499` | ![#2dcc82](https://placehold.co/16x16/2dcc82/2dcc82) `#2dcc82` | ![#008043](https://placehold.co/16x16/008043/008043) `#008043` |
-| Purple | ![#a48cf2](https://placehold.co/16x16/a48cf2/a48cf2) `#a48cf2` | ![#8b75d9](https://placehold.co/16x16/8b75d9/8b75d9) `#8b75d9` | ![#754ef6](https://placehold.co/16x16/754ef6/754ef6) `#754ef6` |
-| Pink | ![#f265b5](https://placehold.co/16x16/f265b5/f265b5) `#f265b5` | ![#d154a1](https://placehold.co/16x16/d154a1/d154a1) `#d154a1` | ![#d6057c](https://placehold.co/16x16/d6057c/d6057c) `#d6057c` |
-| Red | ![#f16c75](https://placehold.co/16x16/f16c75/f16c75) `#f16c75` | ![#cc5860](https://placehold.co/16x16/cc5860/cc5860) `#cc5860` | ![#df0514](https://placehold.co/16x16/df0514/df0514) `#df0514` |
-| Yellow | ![#f1fc79](https://placehold.co/16x16/f1fc79/f1fc79) `#f1fc79` | ![#ccd663](https://placehold.co/16x16/ccd663/ccd663) `#ccd663` | ![#767200](https://placehold.co/16x16/767200/767200) `#767200` |
-| Orange | ![#f7c67f](https://placehold.co/16x16/f7c67f/f7c67f) `#f7c67f` | ![#d4a666](https://placehold.co/16x16/d4a666/d4a666) `#d4a666` | ![#a75c00](https://placehold.co/16x16/a75c00/a75c00) `#a75c00` |
-
-> **Deprecated:** **Eldritch Dark** is now **Eldritch Abyss** (same colors). **Eldritch Deeper** (deep background + vibrant accents) is a legacy Zed-only variant. Both remain for one release and will be removed in a future version.
+| Color | Eldritch (Cthulhu) | Eldritch Midnight | Eldritch Abyss | Eldritch Dusk (light) |
+|-------|--------------------|-------------------|----------------|-----------------------|
+| Background | ![#212337](https://placehold.co/16x16/212337/212337) `#212337` | ![#171928](https://placehold.co/16x16/171928/171928) `#171928` | ![#171928](https://placehold.co/16x16/171928/171928) `#171928` | ![#f0f3f4](https://placehold.co/16x16/f0f3f4/f0f3f4) `#f0f3f4` |
+| Foreground | ![#ebfafa](https://placehold.co/16x16/ebfafa/ebfafa) `#ebfafa` | ![#ebfafa](https://placehold.co/16x16/ebfafa/ebfafa) `#ebfafa` | ![#d8e6e6](https://placehold.co/16x16/d8e6e6/d8e6e6) `#d8e6e6` | ![#1e2029](https://placehold.co/16x16/1e2029/1e2029) `#1e2029` |
+| Cyan | ![#04d1f9](https://placehold.co/16x16/04d1f9/04d1f9) `#04d1f9` | ![#04d1f9](https://placehold.co/16x16/04d1f9/04d1f9) `#04d1f9` | ![#0396b3](https://placehold.co/16x16/0396b3/0396b3) `#0396b3` | ![#007992](https://placehold.co/16x16/007992/007992) `#007992` |
+| Green | ![#37f499](https://placehold.co/16x16/37f499/37f499) `#37f499` | ![#37f499](https://placehold.co/16x16/37f499/37f499) `#37f499` | ![#2dcc82](https://placehold.co/16x16/2dcc82/2dcc82) `#2dcc82` | ![#008043](https://placehold.co/16x16/008043/008043) `#008043` |
+| Purple | ![#a48cf2](https://placehold.co/16x16/a48cf2/a48cf2) `#a48cf2` | ![#a48cf2](https://placehold.co/16x16/a48cf2/a48cf2) `#a48cf2` | ![#8b75d9](https://placehold.co/16x16/8b75d9/8b75d9) `#8b75d9` | ![#754ef6](https://placehold.co/16x16/754ef6/754ef6) `#754ef6` |
+| Pink | ![#f265b5](https://placehold.co/16x16/f265b5/f265b5) `#f265b5` | ![#f265b5](https://placehold.co/16x16/f265b5/f265b5) `#f265b5` | ![#d154a1](https://placehold.co/16x16/d154a1/d154a1) `#d154a1` | ![#d6057c](https://placehold.co/16x16/d6057c/d6057c) `#d6057c` |
+| Red | ![#f16c75](https://placehold.co/16x16/f16c75/f16c75) `#f16c75` | ![#f16c75](https://placehold.co/16x16/f16c75/f16c75) `#f16c75` | ![#cc5860](https://placehold.co/16x16/cc5860/cc5860) `#cc5860` | ![#df0514](https://placehold.co/16x16/df0514/df0514) `#df0514` |
+| Yellow | ![#f1fc79](https://placehold.co/16x16/f1fc79/f1fc79) `#f1fc79` | ![#f1fc79](https://placehold.co/16x16/f1fc79/f1fc79) `#f1fc79` | ![#ccd663](https://placehold.co/16x16/ccd663/ccd663) `#ccd663` | ![#767200](https://placehold.co/16x16/767200/767200) `#767200` |
+| Orange | ![#f7c67f](https://placehold.co/16x16/f7c67f/f7c67f) `#f7c67f` | ![#f7c67f](https://placehold.co/16x16/f7c67f/f7c67f) `#f7c67f` | ![#d4a666](https://placehold.co/16x16/d4a666/d4a666) `#d4a666` | ![#a75c00](https://placehold.co/16x16/a75c00/a75c00) `#a75c00` |
 
 ## Disabling Italics
 

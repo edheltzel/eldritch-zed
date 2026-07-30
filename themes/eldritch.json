@@ -1624,7 +1624,7 @@
         "surface.background": "#e2e6e8",
         "elevated_surface.background": "#e2e6e8",
         "border": "#d5d9db",
-        "border.variant": "#8a69f7",
+        "border.variant": "#c9cbcd",
         "border.focused": "#38ff9f81",
         "border.selected": "#8a69f7",
         "border.transparent": "#1e202900",
